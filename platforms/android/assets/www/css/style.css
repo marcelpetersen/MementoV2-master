@@ -1,0 +1,338 @@
+
+/*chat*/
+.backgroundChat{
+
+    background: url(../img/MessangerSection.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.scroll{
+    height:100%;
+}
+.bubble{
+    border-radius: 5px;
+    box-shadow: 0 0 6px #B2B2B2;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+    vertical-align: top;
+}
+
+.bubble::before {
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    transform:             rotate( 29deg ) skew( -35deg );
+    -moz-transform:    rotate( 29deg ) skew( -35deg );
+    -ms-transform:     rotate( 29deg ) skew( -35deg );
+    -o-transform:      rotate( 29deg ) skew( -35deg );
+    -webkit-transform: rotate( 29deg ) skew( -35deg );
+    width:  20px;
+}
+
+.sense {
+    background-color: #40A8FC;
+    float: left;
+    margin: 5px 45px 5px 20px;
+}
+
+.sense::before {
+    background-color: #40A8FC;
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: -9px;
+}
+
+.logique {
+    background-color: #ffcc00;
+    float: left;
+    margin: 5px 45px 5px 20px;
+}
+
+.logique::before {
+    background-color: #ffcc00;
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: -9px;
+}
+
+.me {
+    background-color: #DEDEE5;
+    float: right;
+    margin: 5px 20px 5px 45px;
+}
+
+.me::before {
+    background-color: #DEDEE5;
+    box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
+    right: -9px;
+
+}.logic {
+    background-color: #ff0000;
+    float: right;
+    margin: 5px 20px 5px 45px;
+}
+
+.logic::before {
+    background-color: #ff0000;
+    box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
+    right: -9px;
+}
+
+.chatUser {
+font-style: italic;
+}
+/* end chat*/
+.messageContente{
+    font-weight: bold;
+}
+/* backgroundPage*/
+/*Dash style*/
+.backgroundDash {
+
+    background: url(../img/HOMEPAgeLogg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.DashUsername{
+    text-align: center;
+    color:white;
+    margin-top: 62.8%;
+}
+
+/*Map Style*/
+.backgroundMap {
+
+    background: url(../img/Map.png) center ;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+#map
+{
+    width:75%;
+    height:75%;
+    margin:auto;
+    margin-top:60px;
+}
+
+.backgroundQuest {
+
+    background: url(../img/PagesQuetes.png) center ;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+/*signIn /up and Button page*/
+
+.BackgroundSignIn{
+    background: url(../img/HOMEPAge.png) center ;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+
+}
+.BackgroundSignInButton{
+    background: url(../img/popup.png) center ;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+
+}
+
+.radioButton1{
+    width:45%;
+    margin:0 auto;
+    margin-top:5%;
+
+}
+.radioButton2{
+    width:45%;
+    margin:0 auto;
+}
+
+.logButtonPage{
+    width:20%;
+    display: block;
+    margin:0 auto;
+    margin-top:15%;
+}
+.SignUpButtonPage{
+    width:50%;
+    display: block;
+    margin:0 auto;
+    margin-top:5%;
+}
+.inputStyle{
+    width: 80%;
+    display: block;
+    margin:0 auto;
+    margin-top:70%;
+}
+
+.logButton{
+    display: block;
+    margin:0 auto;
+    margin-top:110%;
+}
+.buttonLogin{
+    width:20%;
+    display: block;
+    margin:0 auto;
+
+}
+.buttonRegister{
+    width:26%;
+    display: block;
+    margin:0 auto;
+
+}
+.buttonFB{
+    width:54%;
+    display: block;
+    margin:0 auto;
+    margin-top:35px;
+
+}
+
+
+/* bar noir*/
+.bar.bar-custom {
+    border-color: #000000;
+    background-color: #000000;
+    background-image: linear-gradient(0deg, #0c60ee, #0c60ee 50%, transparent 50%);
+    color: #fff; }
+.bar.bar-custom .title {
+    color: #fff; }
+.bar.bar-custom.bar-footer {
+    background-image: linear-gradient(180deg, #0c60ee, #0c60ee 50%, transparent 50%); }
+
+.bar-custom .button {
+    border-color: transparent;
+    background-color: #000000;
+    color: #fff; }
+.bar-custom .button:hover {
+    color: #fff;
+    text-decoration: none; }
+.bar-custom .button.active, .bar-positive .button.activated {
+    background-color: #0c60ee; }
+.bar-custom .button.button-clear {
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+    color: #fff;
+    font-size: 17px; }
+.bar-custom .button.button-icon {
+    border-color: transparent;
+    background: none; }
+
+/*tabs noir
+.tabs-custom > .tabs,
+.tabs.tabs-custom {
+    border-color: #000000;
+    background-color: #000000;
+    background-image: linear-gradient(0deg, #0c60ee, #0c60ee 50%, transparent 20%);
+    color: #fff; }
+.tabs-custom > .tabs .tab-item .badge,
+.tabs.tabs-custom .tab-item .badge {
+    background-color: #fff;
+    color: #387ef5; }
+
+.tabs-striped.tabs-custom .tabs {
+    background-color: #000000; }
+
+.tabs-striped.tabs-custom .tab-item {
+    color: rgba(255, 255, 255, 0.4);
+    opacity: 1; }
+.tabs-striped.tabs-custom .tab-item .badge {
+    opacity: 1; }
+.tabs-striped.tabs-custom .tab-item.tab-item-active, .tabs-striped.tabs-custom .tab-item.active, .tabs-striped.tabs-positive .tab-item.activated {
+    margin-top: 0px;
+    color: #fff;
+    border-style: solid;
+    border-width: 2px 0 0 0;
+    border-color: #fff; }
+*/
+
+/* custom icon*/
+
+.tabs .tab-item .icon.home {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 100%;
+    background-image: url('../img/home-back.png');
+    background-size:contain;
+}
+.tabs .tab-item .icon.map {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 100%;
+    background-image: url('../img/boussole.png');
+    background-size:contain;
+}
+
+
+.tabs .tab-item .icon.chat {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 100%;
+    background-image: url('../img/plume.png');
+    background-size:contain;
+}
+
+.tabs .tab-item .icon.quete {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 100%;
+    background-image: url('../img/Noeud-Gordien.png');
+    background-size:contain;
+}
+
+/*tabs transport*/
+
+
+
+.has-tabs{
+    bottom: 0 !important;
+    padding-bottom:49px !important;
+}
+.has-tabs .scroll{
+    padding-bottom:49px !important;
+}
+
+.tabs-blur .tab-nav.tabs{
+    background-color: rgba(255,255,255,0) !important;
+    border: 0px !important;
+    border-bottom-color: transparent !important;
+    background-image: none !important;
+    border-bottom: none !important;
+}
+
+/* nav bar trans*/
+.bar.bar-header {
+    background: rgba(255,255,255,0.10);
+    border-bottom-width: 0;
+}
+
+.bar.bar-header h1 {
+    color: black !important;
+}
+
+.scroll-content {
+    overflow: visible !important;
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .has-header {
+    top:0px;
+}
+

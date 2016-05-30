@@ -1,0 +1,35 @@
+<ion-view class="backgroundNeutre">
+
+    <ion-nav-buttons side="right">
+
+        <button class="button" style="border: 0; background: transparent" ng-click="logOut()"><i class="icon button-icon ion-power"></i>
+        </button>
+
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="left">
+
+        <button class="button" style="border: 0; background: transparent" ng-click="logOut()"><i class="icon button-icon ion-android-settings"></i>
+        </button>
+
+    </ion-nav-buttons>
+    <ion-content>
+
+
+        <div class="list inputStyleQueteCheck">
+
+            <form>
+
+                <label class="item item-input">
+                    <input ng-model="user.email" type="text" placeholder="Votre réponse ici !">
+                </label>
+
+
+            </form>
+        </div>
+
+        <button class="button button-balanced QueteButtonPageCheck" ng-click="register(user)">Valider
+        </button>
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'Calson';
+    src: url('../font/ufonts.com_caslon_3_lt_roman.eot');
+    src: url('../font/ufonts.com_caslon_3_lt_roman.eot') format('truetype'),
+            url('../font/ufonts.com_caslon-3-lt-roman.woff') format('woff'),
+            url('../font/ufonts.com_caslon_3_lt_roman.eot?#iefix') format('embedded-opentype'),
+            url('../font/Caslon-3.svg#Caslon-3Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*chat*/
+.backgroundChat{
+
+    background: url(../img/popupChat-copie.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.scroll{
+    height:100%;
+}
+.bubble{
+    border-radius: 5px;
+    box-shadow: 0 0 6px #B2B2B2;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+    vertical-align: top;
+}
+
+.bubble::before {
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    transform:             rotate( 29deg ) skew( -35deg );
+    -moz-transform:    rotate( 29deg ) skew( -35deg );
+    -ms-transform:     rotate( 29deg ) skew( -35deg );
+    -o-transform:      rotate( 29deg ) skew( -35deg );
+    -webkit-transform: rotate( 29deg ) skew( -35deg );
+    width:  20px;
+}
+
+.sense {
+    background-color: #40A8FC;
+    float: left;
+    margin: 5px 45px 5px 20px;
+}
+
+.sense::before {
+    background-color: #40A8FC;
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: -9px;
+}
+
+.logique {
+    background-color: #ff0000;
+    float: left;
+    margin: 5px 45px 5px 20px;
+}
+
+.logique::before {
+    background-color: #ff0000;
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: -9px;
+}
+
+.me {
+    background-color: #DEDEE5;
+    float: right;
+    margin: 5px 20px 5px 45px;
+}
+
+.me::before {
+    background-color: #DEDEE5;
+    box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
+    right: -9px;
+
+}.logic {
+    background-color: #ff0000;
+    float: right;
+    margin: 5px 20px 5px 45px;
+}
+
+.logic::before {
+    background-color: #ff0000;
+    box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
+    right: -9px;
+}
+
+.chatUser {
+font-style: italic;
+    font-weight: bolder;
+}
+.messageContente{
+    font-weight: bold;
+}
+/* end chat*/
+/* backgroundPage*/
+
+/*tuto1 style*/
+
+.buttonTuto1{
+    width: 40%;
+    margin:auto;
+    margin-top: 30%;
+
+}
+.tutoTextStyle{
+    margin-top: 13%;
+    text-align: center;
+    color: white;
+    font-family: Calson;
+    font-weight: bold;
+    font-size: large;
+}
+
+.buttonValTuto{
+    width: 20%;
+    margin: auto;
+    margin-top: 15%;
+}
+/*Dash style*/
+.backgroundDash {
+
+    background: url(../img/HOMEPAgeLogg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.DashUsername{
+    text-align: center;
+    color:white;
+    margin-top: 72.8%;
+    font-family: 'Calson';
+    font-size: 25px;
+}
+
+/*Map Style*/
+.backgroundMap {
+
+    background: url(../img/Map.png) center ;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+#map
+{
+    width:70%;
+    height:73%;
+    margin:auto;
+    margin-top:98px;
+}
+
+/*Quete Style*/
+.backgroundQuest {
+
+    background: url(../img/PagesQuetes.png) center ;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.buttonQuete{
+    width: 100%;
+    margin: auto;
+    margin-top:40%;
+
+}
+.inputStyleQueteCheck{
+    width: 80%;
+    display: block;
+    margin:0 auto;
+    margin-top:110%;
+}
+.QueteButtonPageCheck{
+    width:50%;
+    display: block;
+    margin:0 auto;
+    margin-top:5%;
+}
+
+.backgroundNeutre{
+    background: url(../img/popupChat.png) center ;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+
+/*signIn /up and Button page*/
+
+.BackgroundSignIn{
+    background: url(../img/HOMEPAge.png) center ;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+
+}
+.BackgroundSignInButton{
+    background: url(../img/popupChat.png) center ;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+
+}
+
+.radioButton1{
+    width:45%;
+    margin:0 auto;
+    margin-top:5%;
+
+}
+.radioButton2{
+    width:45%;
+    margin:0 auto;
+}
+
+.logButtonPage{
+    width:20%;
+    display: block;
+    margin:0 auto;
+    margin-top:15%;
+}
+.SignUpButtonPage{
+    width:50%;
+    display: block;
+    margin:0 auto;
+    margin-top:15%;
+}
+.inputStyle{
+    width: 80%;
+    display: block;
+    margin:0 auto;
+    margin-top:20%;
+}
+
+.logButton{
+    display: block;
+    margin:0 auto;
+    margin-top:100%;
+}
+.buttonLogin{
+    width:21%;
+    display: block;
+    margin:0 auto;
+
+}
+.buttonRegister{
+    width:19%;
+    display: block;
+    margin:0 auto;
+    margin-top:10px;
+
+}
+.buttonFB{
+    width:41%;
+    display: block;
+    margin:0 auto;
+    margin-top:35px;
+
+}
+
+
+
+
+/* custom icon*/
+
+.tabs .tab-item .icon.home {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 100%;
+    background-image: url('../img/home-back.png');
+    background-size:contain;
+}
+.tabs .tab-item .icon.map {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 100%;
+    background-image: url('../img/boussole.png');
+    background-size:contain;
+}
+
+
+.tabs .tab-item .icon.chat {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 100%;
+    background-image: url('../img/plume.png');
+    background-size:contain;
+}
+
+.tabs .tab-item .icon.quete {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 100%;
+    background-image: url('../img/Noeud-Gordien.png');
+    background-size:contain;
+}
+
+/*tabs transport*/
+
+.has-tabs{
+    bottom: 0 !important;
+    padding-bottom:49px !important;
+}
+.has-tabs .scroll{
+    padding-bottom:49px !important;
+}
+
+.tabs-blur .tab-nav.tabs{
+    background-color: rgba(255,255,255,0) !important;
+    border: 0px !important;
+    border-bottom-color: transparent !important;
+    background-image: none !important;
+    border-bottom: none !important;
+}
+
+/* nav bar trans*/
+.bar.bar-header {
+    background: rgba(255,255,255,0.0);
+    border-bottom-width: 0;
+}
+
+.bar.bar-header h1 {
+    color: black !important;
+}
+
+.scroll-content {
+    overflow: visible !important;
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .has-header {
+    top:0px;
+}

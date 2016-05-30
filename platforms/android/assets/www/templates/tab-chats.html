@@ -1,0 +1,47 @@
+  <ion-view title="Chat room" class="backgroundChat">
+  <ion-content padding="true">
+
+
+
+    <div style="margin-top:15px;" ng-repeat="message in messages"><!--ng-repeat="message in messages"-->
+
+       <div ng-if="message.username != username && message.team == 'sense'">
+         <div>
+            <span class="chatUser" style="color:white;">{{message.username}} :</span> : <br/> <span class="bubble sense messageContente">{{message.content}}</span>
+          </div>
+       </div>
+
+      <div ng-if="message.username != username && message.team == 'logique'">
+         <div>
+            <span class="chatUser" style="color:white;">{{message.username}} :</span> : <br/> <span class="bubble logique messageContente">{{message.content}}</span>
+          </div>
+       </div>
+
+      <div style="clear:both"></div>
+
+      <div ng-if="message.username == username">
+        <div class="bubble me">
+          <span class="messageContente">{{ message.content }}</span>
+        </div>
+      </div>
+
+      <div style="clear:both"></div>
+
+    </div>
+
+
+
+  </ion-content>
+  <ion-footer-bar keyboard-attach class="backgroundChat">
+    <form style="width: 100%;">
+      <div class="bar bar-header item-input-inset">
+        <label class="item-input-wrapper">
+          <input type="search" placeholder="Tapez un message" ng-model="contente">
+        </label>
+        <button class="button button-balanced" type="submit" ng-click="sendMsg()">
+          <i class="icon icon-button ion-paper-airplane"></i>
+        </button>
+      </div>
+    </form>
+  </ion-footer-bar>
+</ion-view>

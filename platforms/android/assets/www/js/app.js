@@ -1,0 +1,86 @@
+var app = angular.module('starter', ['ionic', 'firebase', 'ngCordova' ,'ngCordovaOauth']);
+
+app.constant('furl','https://mementov2.firebaseio.com/');
+app.run(function($ionicPlatform) {
+  $ionicPlatform.ready(function() {
+    if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
+      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+      cordova.plugins.Keyboard.disableScroll(true);
+    }
+    if (window.StatusBar) {
+      StatusBar.styleDefault();
+    }
+  });
+});
+
+app.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+
+  $ionicConfigProvider.tabs.position('top');
+
+  $stateProvider
+      
+  .state('SignIn', {
+    url: '/SignIn',
+    templateUrl: 'templates/signIn.html',
+    controller: 'UserCtrl'
+  })
+  .state('SignInButton', {
+    url: '/SignInButton',
+    templateUrl: 'templates/signInButton.html',
+    controller: 'UserCtrl'
+  })
+  .state('SignUp', {
+    url: '/SignUp',
+    templateUrl: 'templates/signUp.html',
+    controller: 'UserCtrl'
+  })
+  .state('tab', {
+    url: '/tab',
+    abstract: true,
+    templateUrl: 'templates/tabs.html'
+  })
+    
+  .state('tab.dash', {
+    url: '/dash',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/tab-dash.html',
+        controller: 'DashCtrl'
+      }
+    }
+  })
+
+  .state('tab.map', {
+      url: '/map',
+      views: {
+        'tab-map': {
+          templateUrl: 'templates/tab-map.html',
+          controller: 'MapCtrl'
+        }
+      }
+    })
+  .state('tab.chats', {
+      cache: true,
+      url: '/chats/:userChat',
+      params: {currentUsername : null},
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/tab-chats.html',
+          controller: 'ChatsCtrl'
+        }
+      }
+    })
+
+  .state('tab.account', {
+    url: '/account',
+    views:{
+      'tab-account': {
+        templateUrl: 'templates/tab-quete.html',
+        controller: 'AccountCtrl'
+      }
+      }
+  });
+
+  $urlRouterProvider.otherwise('/tab/dash');
+
+});
