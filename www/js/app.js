@@ -103,6 +103,6 @@ app.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
 
   });
 
-  $urlRouterProvider.otherwise('/SignIn');
+  $urlRouterProvider.otherwise('/tuto3');
 
 });
