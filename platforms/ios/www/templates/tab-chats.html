@@ -1,33 +1,52 @@
-  <ion-view title="Chat room">
-  <ion-nav-buttons side="left">
-    <button class="button" ui-sref="tab.dash"><i class="ion-arrow-left-c"></i> Back</button>
-  </ion-nav-buttons>
+<ion-view class="backgroundChat">
+
+    <ion-nav-buttons side="right">
+
+        <button class="button" style="border: 0; background: transparent"><i class="icon button-icon ion-camera"></i>
+        </button>
+
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="left">
+
+        <button class="button" style="border: 0; background: transparent" ui-sref="Account"><i class="icon button-icon ion-android-settings"></i>
+        </button>
+
+    </ion-nav-buttons>
   <ion-content padding="true">
 
-    <div ng-repeat="message in messages">
+    <div>
+        <div ng-repeat="message in messages" style="margin-top: 3%;"><!--ng-repeat="message in messages"-->
 
-       <div ng-if="message.username != username">
-         <div>
-            <span class="chatUser">{{message.username}}</span> : <br/> <span class="bubble me messageContente">{{message.content}}</span>
+           <div ng-if="message.username != username && message.team == 'sense'">
+             <div>
+                <span class="chatUser" style="color:white;">{{message.username}} :</span> : <br/> <span class="bubble sense messageContente">{{message.content}}</span>
+              </div>
+           </div>
+
+          <div ng-if="message.username != username && message.team == 'logique'">
+             <div>
+                <span class="chatUser" style="color:white;">{{message.username}} :</span> : <br/> <span class="bubble logique messageContente">{{message.content}}</span>
+              </div>
+           </div>
+
+          <div style="clear:both"></div>
+
+          <div ng-if="message.username == username">
+            <div class="bubble me">
+              <span class="messageContente">{{ message.content }}</span>
+            </div>
           </div>
-       </div>
 
-      <div style="clear:both"></div>
+          <div style="clear:both"></div>
 
-      <div ng-if="message.username == username">
-        <div class="bubble you">
-          <span class="messageContente">{{ message.content }}</span>
         </div>
-      </div>
-
-      <div style="clear:both"></div>
-
     </div>
 
 
 
   </ion-content>
-  <ion-footer-bar keyboard-attach>
+  <ion-footer-bar keyboard-attach class="backgroundChat">
     <form style="width: 100%;">
       <div class="bar bar-header item-input-inset">
         <label class="item-input-wrapper">

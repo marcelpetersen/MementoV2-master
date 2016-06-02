@@ -16,6 +16,8 @@ app.run(function($ionicPlatform) {
 app.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
 
   $ionicConfigProvider.tabs.position('top');
+  $ionicConfigProvider.navBar.alignTitle('center');
+  
 
   $stateProvider
       
@@ -34,6 +36,11 @@ app.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
     templateUrl: 'templates/signUp.html',
     controller: 'UserCtrl'
   })
+  .state('SignUpComp', {
+    url: '/SignUpComp',
+    templateUrl: 'templates/signUpComp.html',
+    controller: 'UserCompCtrl'
+  })
   .state('Tuto1', {
     url: '/tuto1',
     templateUrl: 'templates/tuto/Tuto1.html',
@@ -48,6 +55,11 @@ app.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
     url: '/tuto3',
     templateUrl: 'templates/tuto/Tuto3.html',
     controller: 'TutoCtrl'
+  })
+  .state('Account', {
+    url: '/Account',
+    templateUrl: 'templates/account.html',
+    controller: 'AccountCtrl'
   })
 
   .state('tab', {
@@ -78,7 +90,7 @@ app.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
     })
   .state('tab.chats', {
       cache: true,
-      url: '/chats/:userChat',
+      url: '/chats',
       params: {currentUsername : null},
       views: {
         'tab-chats': {
@@ -103,6 +115,6 @@ app.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
 
   });
 
-  $urlRouterProvider.otherwise('/tuto3');
+  $urlRouterProvider.otherwise('/tab/map');
 
 });

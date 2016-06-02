@@ -1,35 +1,22 @@
 <ion-view class="BackgroundSignIn">
-    <ion-content class="padding" scroll="false">
+    <ion-content class="padding" scroll="true">
 
 
-        <div class="list">
-            <form action="" >
-<!--
-                <label class="item item-input">
-                    <input ng-model="user.email" type="email" placeholder="Email">
-                </label>
 
-                <label class="item item-input">
-                    <input ng-model="user.password" type="password" placeholder="Password">
-                </label>
-
--->
                 <div class="logButton">
                     <div class="buttonLogin">
-                        <button  class="button button-default" ui-sref="SignInButton" >Connexion</button>
+                        <button  class="button button-default button-small" ui-sref="SignInButton" >Connexion</button>
                     </div>
 
                     <div class="buttonRegister">
-                        <button class="button button-default" ui-sref="SignUp">Insciption</button>
+                        <button class="button button-default button-small" ui-sref="SignUp">Insciption</button>
                     </div>
 
                 </div>
-                    <div class="buttonFB">
-                        <button ng-click="loginFB()" class="button button-default"> <i class="ion-social-facebook">     Login with Facebook</i></button>
-                    </div>
-            </form>
+                <div class="buttonFB">
+                    <button ng-click="loginFB()" class="button button-default button-small"> <i class="ion-social-facebook">     Login with Facebook</i></button>
 
-        </div>
+                </div>
 
 
     </ion-content>

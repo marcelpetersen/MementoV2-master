@@ -1,8 +1,17 @@
-
+@font-face {
+    font-family: 'Calson';
+    src: url('../font/ufonts.com_caslon_3_lt_roman.eot');
+    src: url('../font/ufonts.com_caslon_3_lt_roman.eot') format('truetype'),
+            url('../font/ufonts.com_caslon-3-lt-roman.woff') format('woff'),
+            url('../font/ufonts.com_caslon_3_lt_roman.eot?#iefix') format('embedded-opentype'),
+            url('../font/Caslon-3.svg#Caslon-3Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 /*chat*/
 .backgroundChat{
 
-    background: url(../img/MessangerSection.png);
+    background: url(../img/popupChat-copie.png);
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -48,13 +57,13 @@
 }
 
 .logique {
-    background-color: #ffcc00;
+    background-color: #ff0000;
     float: left;
     margin: 5px 45px 5px 20px;
 }
 
 .logique::before {
-    background-color: #ffcc00;
+    background-color: #ff0000;
     box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
     left: -9px;
 }
@@ -84,12 +93,35 @@
 
 .chatUser {
 font-style: italic;
+    font-weight: bolder;
 }
-/* end chat*/
 .messageContente{
     font-weight: bold;
 }
+/* end chat*/
 /* backgroundPage*/
+
+/*tuto1 style*/
+
+.buttonTuto1{
+    width: 28%;
+    margin:auto;
+    margin-top: 5%;
+
+}
+.tutoTextStyle{
+    margin-top: 13%;
+    text-align: center;
+    color: white;
+    font-family: Calson;
+    font-weight: bold;
+}
+
+.buttonValTuto{
+    width: 25%;
+    margin: auto;
+    margin-top: 15%;
+}
 /*Dash style*/
 .backgroundDash {
 
@@ -103,7 +135,9 @@ font-style: italic;
 .DashUsername{
     text-align: center;
     color:white;
-    margin-top: 62.8%;
+    margin-top: 55.8%;
+    font-family: 'Calson';
+    font-size: 18px;
 }
 
 /*Map Style*/
@@ -117,12 +151,13 @@ font-style: italic;
 }
 #map
 {
-    width:75%;
-    height:75%;
+    width:70%;
+    height:80%;
     margin:auto;
-    margin-top:60px;
+    margin-top:28px;
 }
 
+/*Quete Style*/
 .backgroundQuest {
 
     background: url(../img/PagesQuetes.png) center ;
@@ -131,6 +166,45 @@ font-style: italic;
     -moz-background-size: cover;
     background-size: cover;
 }
+.buttonQuete{
+    width: 100%;
+    margin: auto;
+    margin-top:27%;
+
+}
+.inputStyleQueteCheck{
+    width: 80%;
+    display: block;
+    margin:0 auto;
+    margin-top: 5px;
+}
+.QueteButtonPageCheck{
+    width:50%;
+    display: block;
+    margin:0 auto;
+    margin-top:2%;
+}
+
+.slider {
+    height: 30vh;
+}
+
+.slider-slide
+{
+    text-align: center;
+}
+
+
+
+.backgroundNeutre{
+    background: url(../img/popupChat.png) center ;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+
 /*signIn /up and Button page*/
 
 .BackgroundSignIn{
@@ -142,7 +216,7 @@ font-style: italic;
 
 }
 .BackgroundSignInButton{
-    background: url(../img/popup.png) center ;
+    background: url(../img/popupChat.png) center ;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -151,13 +225,13 @@ font-style: italic;
 }
 
 .radioButton1{
-    width:45%;
+    width:65%;
     margin:0 auto;
     margin-top:5%;
 
 }
 .radioButton2{
-    width:45%;
+    width:65%;
     margin:0 auto;
 }
 
@@ -171,98 +245,43 @@ font-style: italic;
     width:50%;
     display: block;
     margin:0 auto;
-    margin-top:5%;
+    margin-top:15%;
 }
 .inputStyle{
     width: 80%;
     display: block;
     margin:0 auto;
-    margin-top:70%;
+    margin-top:20%;
 }
 
 .logButton{
     display: block;
     margin:0 auto;
-    margin-top:110%;
+    margin-top:90%;
 }
 .buttonLogin{
-    width:20%;
+    width:23.5%;
     display: block;
     margin:0 auto;
 
 }
 .buttonRegister{
-    width:26%;
+    width:22%;
     display: block;
     margin:0 auto;
+    margin-top:10px;
 
 }
 .buttonFB{
-    width:54%;
+    width:44%;
     display: block;
     margin:0 auto;
-    margin-top:35px;
+    margin-top:20px;
 
 }
 
 
-/* bar noir*/
-.bar.bar-custom {
-    border-color: #000000;
-    background-color: #000000;
-    background-image: linear-gradient(0deg, #0c60ee, #0c60ee 50%, transparent 50%);
-    color: #fff; }
-.bar.bar-custom .title {
-    color: #fff; }
-.bar.bar-custom.bar-footer {
-    background-image: linear-gradient(180deg, #0c60ee, #0c60ee 50%, transparent 50%); }
 
-.bar-custom .button {
-    border-color: transparent;
-    background-color: #000000;
-    color: #fff; }
-.bar-custom .button:hover {
-    color: #fff;
-    text-decoration: none; }
-.bar-custom .button.active, .bar-positive .button.activated {
-    background-color: #0c60ee; }
-.bar-custom .button.button-clear {
-    border-color: transparent;
-    background: none;
-    box-shadow: none;
-    color: #fff;
-    font-size: 17px; }
-.bar-custom .button.button-icon {
-    border-color: transparent;
-    background: none; }
-
-/*tabs noir
-.tabs-custom > .tabs,
-.tabs.tabs-custom {
-    border-color: #000000;
-    background-color: #000000;
-    background-image: linear-gradient(0deg, #0c60ee, #0c60ee 50%, transparent 20%);
-    color: #fff; }
-.tabs-custom > .tabs .tab-item .badge,
-.tabs.tabs-custom .tab-item .badge {
-    background-color: #fff;
-    color: #387ef5; }
-
-.tabs-striped.tabs-custom .tabs {
-    background-color: #000000; }
-
-.tabs-striped.tabs-custom .tab-item {
-    color: rgba(255, 255, 255, 0.4);
-    opacity: 1; }
-.tabs-striped.tabs-custom .tab-item .badge {
-    opacity: 1; }
-.tabs-striped.tabs-custom .tab-item.tab-item-active, .tabs-striped.tabs-custom .tab-item.active, .tabs-striped.tabs-positive .tab-item.activated {
-    margin-top: 0px;
-    color: #fff;
-    border-style: solid;
-    border-width: 2px 0 0 0;
-    border-color: #fff; }
-*/
 
 /* custom icon*/
 
@@ -272,6 +291,7 @@ font-style: italic;
     height: 100%;
     background-image: url('../img/home-back.png');
     background-size:contain;
+
 }
 .tabs .tab-item .icon.map {
     background-repeat: no-repeat;
@@ -279,6 +299,7 @@ font-style: italic;
     height: 100%;
     background-image: url('../img/boussole.png');
     background-size:contain;
+
 }
 
 
@@ -288,6 +309,7 @@ font-style: italic;
     height: 100%;
     background-image: url('../img/plume.png');
     background-size:contain;
+
 }
 
 .tabs .tab-item .icon.quete {
@@ -296,11 +318,10 @@ font-style: italic;
     height: 100%;
     background-image: url('../img/Noeud-Gordien.png');
     background-size:contain;
+
 }
 
 /*tabs transport*/
-
-
 
 .has-tabs{
     bottom: 0 !important;
@@ -318,9 +339,18 @@ font-style: italic;
     border-bottom: none !important;
 }
 
+.tab-item.tab-item-active, .tab-item.active, .tab-item.activated {
+    opacity: 1;
+    border-bottom:0 !important;
+    border-top:0 !important;
+}
+.tabs{
+    margin-top:-10px;
+}
+
 /* nav bar trans*/
 .bar.bar-header {
-    background: rgba(255,255,255,0.10);
+    background: rgba(255,255,255,0.0);
     border-bottom-width: 0;
 }
 
@@ -335,4 +365,5 @@ font-style: italic;
 .platform-ios.platform-cordova:not(.fullscreen) .has-header {
     top:0px;
 }
+
 

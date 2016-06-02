@@ -1,4 +1,4 @@
-app.controller("mapcontroller", function ($scope, $state, $cordovaGeolocation, MapService, $ionicLoading) {
+app.controller("MapCtrl", function ($scope, $state, $cordovaGeolocation, MapService, $ionicLoading) {
 
     var options = {timeout: Infinity, enableHighAccuracy: false};   
     
@@ -33,7 +33,7 @@ app.controller("mapcontroller", function ($scope, $state, $cordovaGeolocation, M
         );
 
         var mapOptions = {
-            center: latLng,
+            center: new google.maps.LatLng(position.coords.latitude,position.coords.longitude),
             zoom: 15,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };

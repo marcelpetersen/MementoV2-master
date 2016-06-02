@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/omar/Desktop/Github/Memento-5727c613fd3f5faecf3e24b1c5f276eef2489e6b/platforms/android/CordovaLib/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/omar/Desktop/Github/Memento-5727c613fd3f5faecf3e24b1c5f276eef2489e6b/platforms/android/CordovaLib/src/debug/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/omar/Desktop/Github/MementoV2-master/platforms/android/CordovaLib/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/omar/Desktop/Github/MementoV2-master/platforms/android/CordovaLib/src/debug/jniLibs"/></dataSet></merger>

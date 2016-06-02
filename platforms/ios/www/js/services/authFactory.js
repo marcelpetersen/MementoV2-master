@@ -40,16 +40,9 @@ app.factory('Auth', function (furl, $firebaseArray) {
 
         var ref = new Firebase(furl); // propriété qui contien l'url de la base
 
-        var userData = ref.getAuth();
-
-
     return{
         ref: function () {
             return ref;
-        },
-
-        getUserData : function () {
-            return userData
         }
     }
 
